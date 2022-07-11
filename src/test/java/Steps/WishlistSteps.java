@@ -44,7 +44,7 @@ public class WishlistSteps {
         WebElement frame3 =driver.findElement(By.cssSelector(".signin-iframe"));
         driver.switchTo().frame(frame3);
 
-        wishlist.signinMember("testerfarmacare@gmail.com","Yakinbisa");
+        wishlist.signinMember("testerfarmacare@gmail.com","Dhiandra");
 
         driver.switchTo().defaultContent();
         Thread.sleep(2000);

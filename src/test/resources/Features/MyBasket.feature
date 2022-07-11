@@ -1,4 +1,4 @@
-@All @MyBasket
+@All @MyBasket @Story2
 Feature: My basket
 
   Scenario: Add a book in my basket

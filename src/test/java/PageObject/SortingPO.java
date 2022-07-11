@@ -15,47 +15,70 @@ public class SortingPO {
     }
 
     @FindBy(xpath= "//input[@name='searchTerm']")
-    WebElement searchBar;
+    private WebElement searchBar;
 
     @FindBy(xpath = "//span[@class='text']")
-    WebElement searchButton;
+    private WebElement searchButton;
 
     @FindBy(xpath = "//h1[contains(.,'Search results for tree')]")
-    WebElement searchResult;
+    private WebElement searchResult;
 
     @FindBy(xpath = "//form[@class='form-inline pull-left search-filter-dropdown']")
-    WebElement selectDropdown;
+    private WebElement selectDropdown;
 
     @FindBy(xpath = "//option[.='Price, low to high']")
-    WebElement selectLowToHigh;
+    private WebElement selectLowToHigh;
 
     @FindBy(xpath = "//a[contains(.,'Shrubs and Trees')]")
-    WebElement lowestBook;
+    private WebElement lowestBook;
 
+    /**
+     * user click on the search bar
+     */
     public void clickSearchBar() {
         searchBar.click();
     }
 
+    /**
+     * user type the keyword
+     *
+     * @param keyword
+     */
     public void typeOnSearchBar(String keyword) {
         searchBar.sendKeys(keyword);
     }
 
+    /**
+     * user click on the search button
+     */
     public void clickSearchBtn() {
         searchButton.click();
     }
 
+    /**
+     * user is navigated to search result page
+     */
     public void navigateToResultPage() {
         searchResult.isDisplayed();
     }
 
+    /**
+     * user click on sort by dropdown
+     */
     public void clickDropdown() {
         selectDropdown.click();
     }
 
+    /**
+     * user select on Price, low to high
+     */
     public void clickLowToHigh() {
         selectLowToHigh.click();
     }
 
+    /**
+     * user will see the cheapest book is at the top of the list
+     */
     public void lowestBookDisplayed() {
         lowestBook.isDisplayed();
     }

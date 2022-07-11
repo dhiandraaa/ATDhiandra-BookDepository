@@ -73,8 +73,8 @@ public class SortingSteps {
         sorting.clickLowToHigh();
     }
 
-    @Then("user will see a list of books sorted from lowest price")
-    public void user_will_see_a_list_of_books_sorted_from_lowest_price() {
+    @Then("user will see a list of books sorted from the lowest price")
+    public void user_will_see_a_list_of_books_sorted_from_the_lowest_price() {
         sorting.lowestBookDisplayed();
     }
 }

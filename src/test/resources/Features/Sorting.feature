@@ -1,4 +1,4 @@
-@All @Sorting
+@All @Sorting @Story1
 Feature: Sorting low to high price
 
   Scenario: Search book
@@ -12,4 +12,4 @@ Feature: Sorting low to high price
     Given user is on search result page
     When user click on search sort by dropdown
     And user click low to high price
-    Then user will see a list of books sorted from lowest price
+    Then user will see a list of books sorted from the lowest price

@@ -1,4 +1,4 @@
-@All @Wishlist
+@All @Wishlist @Story3
 Feature: Wishlist
 
   Scenario: Add book to wishlist
